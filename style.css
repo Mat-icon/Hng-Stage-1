@@ -5,12 +5,10 @@ body {
     background: #201f1ff1;
     color: white;
     overflow-x: hidden;
-    width: 100%;
-    height: 100vh;
 }
 
-.container {
-    width: 80%;
+.container{
+    max-width: 800px;
     margin: auto;
     background: rgba(255, 255, 255, 0.1);
     padding: 20px;
@@ -31,73 +29,51 @@ h1 {
     margin-bottom: 20px;
 }
 
-.profile img {
-    max-width: 100%;
-   
 
-}
 
 .current-time, .goals, .links {
     margin-bottom: 20px;
-    text-align: center;
 }
 
 ul {
     list-style: none;
     padding: 0;
+   
 }
 
 ul li {
+    
     margin: 5px 0;
     padding: 10px;
-    border-radius: 5px;
-    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px; 
 }
 
-.links {
+.links{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+
 }
 
+@media screen and (max-width: 390px) {
+   .links{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+   }
+  }
 
 
 .links a {
     color: #007bff;
     padding: 12px 20px;
+   
     background: white;
     text-decoration: none;
-    border-radius: 5px;
-    width: 100%;
-    max-width: 300px;
-    text-align: center;
-   
+    
 }
 
-.links a:hover {
+.links a:hover{
     background: #ffffff93;
     transition: 0.5s ease-in-out;
 }
 
-@media (max-width: 600px) {
-    .container {
-        width: 100%;
-    }
-
-    .links {
-        flex-direction: column;
-        justify-content: space-around;
-    }
-
-    .links a {
-        width: auto;
-        margin: 0 10px;
-    }
-}
-
-@media (min-width: 1024px) {
-    .container {
-        width: 70%;
-    }
-}
