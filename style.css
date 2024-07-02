@@ -55,7 +55,7 @@ ul li {
 
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 450px) {
    .links{
     width: 90%;
     display: flex;
