@@ -21,7 +21,8 @@ body {
 
 h1 {
     text-align: center;
-    color: #fff;
+    color: transparent;
+    -webkit-text-stroke: #fff 1px;
 }
 
 .profile {
