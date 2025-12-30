@@ -3,74 +3,110 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tech Goals</title>
+    <meta name="description" content="Professional tech goals and profile showcase" />
+    <title>Tech Goals - ICyou</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-      <h1>My Tech Goals for the Next 2 Years</h1>
-      <div class="profile">
-        <img
-          src="assets/image.png"
-          alt="Slack Profile Picture"
-          data-testid="slackProfilePicture"
-        
-        />
-        <p>
-          <strong>Slack Display Name:</strong>
-          <span data-testid="slackDisplayName">ICyou</span>
-        </p>
-        <p>
-          <strong>Slack Email:</strong>
-          <span data-testid="slackEmail">matthewameh007@gmail.com</span>
-        </p>
-        <pre></pre>
-      </div>
+    <main class="container">
+      <header class="page-header">
+        <h1>My Tech Goals for the Next 2 Years</h1>
+      </header>
 
-      <div class="current-time">
-        <p>
-          <strong>Current Time (UTC):</strong>
-          <span data-testid="currentTimeUTC" id="currentTimeUTC"></span>
-        </p>
-        <p>
-          <strong>Current Day:</strong>
-          <span data-testid="currentDay" id="currentDay"></span>
-        </p>
-      </div>
-      <div class="goals">
-        <h2>Goals:</h2>
-        <ul>
-          <li>Learn and master React and Next Technologies.</li>
-          <li>Contribute to open-source projects.</li>
-          <li>Get certified in AWS and Azure cloud technologies.</li>
-          <li>Develop a portfolio of full-stack projects.</li>
-          <li>Networking in the IT space</li>
+      <section class="profile" aria-label="Profile Information">
+        <div class="profile-image-wrapper">
+          <img
+            src="assets/image.png"
+            alt="Slack Profile Picture"
+            data-testid="slackProfilePicture"
+            class="profile-image"
+          />
+        </div>
+        <div class="profile-info">
+          <div class="profile-item">
+            <span class="profile-label">Slack Display Name:</span>
+            <span class="profile-value" data-testid="slackDisplayName">ICyou</span>
+          </div>
+          <div class="profile-item">
+            <span class="profile-label">Slack Email:</span>
+            <span class="profile-value" data-testid="slackEmail">matthewameh007@gmail.com</span>
+          </div>
+        </div>
+        <pre class="image-dimensions" aria-hidden="true"></pre>
+      </section>
+
+      <section class="current-time" aria-label="Current Time and Day">
+        <div class="time-card">
+          <div class="time-item">
+            <span class="time-label">Current Time (UTC):</span>
+            <span class="time-value" data-testid="currentTimeUTC" id="currentTimeUTC"></span>
+          </div>
+          <div class="time-item">
+            <span class="time-label">Current Day:</span>
+            <span class="time-value" data-testid="currentDay" id="currentDay"></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="goals" aria-label="Technology Goals">
+        <h2 class="section-title">Goals:</h2>
+        <ul class="goals-list">
+          <li class="goal-item">
+            <span class="goal-icon" aria-hidden="true">⚛️</span>
+            <span class="goal-text">Learn and master React and Next Technologies.</span>
+          </li>
+          <li class="goal-item">
+            <span class="goal-icon" aria-hidden="true">🤝</span>
+            <span class="goal-text">Contribute to open-source projects.</span>
+          </li>
+          <li class="goal-item">
+            <span class="goal-icon" aria-hidden="true">☁️</span>
+            <span class="goal-text">Get certified in AWS and Azure cloud technologies.</span>
+          </li>
+          <li class="goal-item">
+            <span class="goal-icon" aria-hidden="true">💼</span>
+            <span class="goal-text">Develop a portfolio of full-stack projects.</span>
+          </li>
+          <li class="goal-item">
+            <span class="goal-icon" aria-hidden="true">🌐</span>
+            <span class="goal-text">Networking in the IT space</span>
+          </li>
         </ul>
-      </div>
-      <div class="links">
-        <p>
-          <a href="https://hng.tech/learn" target="_blank" data-testid="hngLink"
-            >HNG Learn</a
-          >
-        </p>
-        <p>
-          <a
-            href="https://keyword.dog"
-            target="_blank"
-            data-testid="keywordLink"
-            >KeywordDog</a
-          >
-        </p>
-        <p>
-          <a
-            href="https://scrapeanyweb.site"
-            target="_blank"
-            data-testid="scrapeanywebLink"
-            >ScrapeWeb</a
-          >
-        </p>
-      </div>
-    </div>
+      </section>
+
+      <nav class="links" aria-label="External Resources">
+        <a
+          href="https://hng.tech/learn"
+          target="_blank"
+          rel="noopener noreferrer"
+          data-testid="hngLink"
+          class="link-button"
+        >
+          <span class="link-text">HNG Learn</span>
+          <span class="link-arrow" aria-hidden="true">→</span>
+        </a>
+        <a
+          href="https://keyword.dog"
+          target="_blank"
+          rel="noopener noreferrer"
+          data-testid="keywordLink"
+          class="link-button"
+        >
+          <span class="link-text">KeywordDog</span>
+          <span class="link-arrow" aria-hidden="true">→</span>
+        </a>
+        <a
+          href="https://scrapeanyweb.site"
+          target="_blank"
+          rel="noopener noreferrer"
+          data-testid="scrapeanywebLink"
+          class="link-button"
+        >
+          <span class="link-text">ScrapeWeb</span>
+          <span class="link-arrow" aria-hidden="true">→</span>
+        </a>
+      </nav>
+    </main>
     <script src="script.js"></script>
   </body>
 </html>
